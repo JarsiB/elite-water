@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Elite Water Solutions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  rel="stylesheet"
+/>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* ================= STP HERO ================= */
+.stp-hero {
+  position: relative;
+  padding: 150px 15px 100px;
+  background: linear-gradient(135deg, #eefaf7, #ffffff);
+  overflow: hidden;
+}
+
+/* CONTENT */
+.stp-hero-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.stp-hero-tag {
+  display: inline-block;
+  background: rgba(0,167,157,0.15);
+  color: #00a79d;
+  padding: 8px 22px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.stp-hero-title {
+  font-size: 54px;
+  font-weight: 800;
+  color: #0b1c2d;
+  margin-bottom: 18px;
+}
+
+.stp-hero-title span {
+  color: #00a79d;
+}
+
+.stp-hero-desc {
+  font-size: 18px;
+  color: #4a5568;
+  line-height: 1.8;
+  max-width: 720px;
+  margin: auto;
+}
+
+/* ================= BUBBLES ================= */
+.stp-hero-bubbles {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.stp-hero-bubbles span {
+  position: absolute;
+  bottom: -120px;
+  background: rgba(0, 167, 157, 0.18);
+  border-radius: 50%;
+  animation: stpBubbleMove 18s linear infinite;
+}
+
+/* BIG + SMALL bubbles */
+.stp-hero-bubbles span:nth-child(1) { left: 6%;  width: 60px; height: 60px; animation-duration: 22s; }
+.stp-hero-bubbles span:nth-child(2) { left: 16%; width: 22px; height: 22px; animation-duration: 14s; }
+.stp-hero-bubbles span:nth-child(3) { left: 30%; width: 38px; height: 38px; animation-duration: 18s; }
+.stp-hero-bubbles span:nth-child(4) { left: 44%; width: 18px; height: 18px; animation-duration: 12s; }
+.stp-hero-bubbles span:nth-child(5) { left: 58%; width: 50px; height: 50px; animation-duration: 21s; }
+.stp-hero-bubbles span:nth-child(6) { left: 70%; width: 24px; height: 24px; animation-duration: 15s; }
+.stp-hero-bubbles span:nth-child(7) { left: 84%; width: 34px; height: 34px; animation-duration: 17s; }
+.stp-hero-bubbles span:nth-child(8) { left: 92%; width: 16px; height: 16px; animation-duration: 11s; }
+
+@keyframes stpBubbleMove {
+  0% { transform: translateY(0) scale(1); opacity: 0; }
+  10% { opacity: 0.6; }
+  100% { transform: translateY(-120vh) scale(1.25); opacity: 0; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .stp-hero-title { font-size: 36px; }
+  .stp-hero-desc { font-size: 16px; }
+}
+/* ================= STP CONTENT ================= */
+/* ================= NEAT STP CONTENT ================= */
+.neat-stp {
+  padding: 90px 15px;
+  background: #f9fbfc;
+}
+
+.stp-content-container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 50px 45px;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* Left accent bar */
+.stp-content-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 40px;
+  bottom: 40px;
+  width: 6px;
+  background: linear-gradient(
+    to bottom,
+    #00a79d,
+    #004641
+  );
+  border-radius: 6px;
+}
+
+/* Tag */
+.stp-section-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #00a79d;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.neat-stp h2 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #0b1c2d;
+  margin-bottom: 22px;
+}
+
+/* Paragraphs */
+.neat-stp p {
+  font-size: 16.5px;
+  color: #4a5568;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .stp-content-container {
+    padding: 40px 25px;
+  }
+
+  .stp-content-container::before {
+    top: 25px;
+    bottom: 25px;
+  }
+
+  .neat-stp h2 {
+    font-size: 28px;
+  }
+
+  .neat-stp p {
+    font-size: 15.5px;
+  }
+}
+
+/* ================= STP GALLERY ================= */
+.stp-gallery {
+  padding: 90px 15px;
+  background: #f9fbfc;
+}
+
+.stp-gallery-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.stp-gallery h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b1c2d;
+  margin-bottom: 30px;
+}
+
+.stp-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stp-gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.stp-gallery-grid img:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .stp-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .stp-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+<body>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,     // animation duration
+    easing: 'ease-in-out',
+    once: true,         // animation only once
+    offset: 120         // trigger point
+  });
+</script>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+
+    <!-- LOGO IMAGE (PNG – TRANSPARENT BG) -->
+    <a class="navbar-brand" href="#"  data-aos="zoom-in">
+      <img src="images/logo.jpg"  alt="Elite Water Solutions Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"  data-aos="zoom-in"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"  data-aos="zoom-in"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"  data-aos="zoom-in"><a class="nav-link active" href="services.html">Services</a></li>
+        <li class="nav-item"  data-aos="zoom-in"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0"  data-aos="zoom-in">
+          <a class="btn btn-main" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<!-- STP HERO -->
+<section class="stp-hero">
+  <!-- BUBBLE BACKGROUND -->
+  <div class="stp-hero-bubbles">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="stp-hero-container">
+
+    <h1 class="stp-hero-title"  data-aos="zoom-in">
+      SEWAGE <span>TREATMENT PLANT</span>
+    </h1>
+
+    
+  </div>
+</section>
+
+
+<!-- <section class="stp-content">
+  <div class="stp-content-container">
+
+    <h2>About Sewage Treatment Plant</h2>
+
+    <p>
+      Sewage treatment (also known as domestic or municipal wastewater treatment)
+      is a process designed to remove contaminants from sewage to produce treated
+      effluent that is safe for discharge into the environment or suitable for
+      reuse applications.
+    </p>
+
+    <p>
+      Sewage contains wastewater from households, businesses, and in some cases
+      pre-treated industrial wastewater. A wide range of sewage treatment
+      processes are available, depending on capacity, quality requirements,
+      and reuse objectives.
+    </p>
+
+  </div>
+</section> -->
+<section class="stp-content neat-stp">
+  <div class="stp-content-container">
+
+    <span class="stp-section-tag"  data-aos="zoom-in">ABOUT STP</span>
+
+    <h2  data-aos="zoom-in">About Sewage Treatment Plant</h2>
+
+    <p style="text-align: justify;"  data-aos="zoom-in">
+      Sewage treatment (also known as domestic or municipal wastewater treatment)
+      is a process designed to remove contaminants from sewage to produce treated
+      effluent that is safe for discharge into the environment or suitable for
+      reuse applications.
+    </p>
+
+    <p style="text-align: justify;"  data-aos="zoom-in">
+      Sewage contains wastewater from households, businesses, and in some cases
+      pre-treated industrial wastewater. A wide range of sewage treatment
+      processes are available, depending on capacity, quality requirements,
+      and reuse objectives.
+    </p>
+
+  </div>
+</section>
+
+
+
+
+
+<section class="stp-gallery">
+  <div class="stp-gallery-container">
+
+    <h3 data-aos="fade-right">STP Installations & Systems</h3>
+
+    <div class="stp-gallery-grid">
+      <img src="images/s1.jpg" alt="STP 1"  data-aos="zoom-in">
+      <img src="images/s2.jpg" alt="STP 2"  data-aos="zoom-in">
+      <img src="images/s3.jpg" alt="STP 3"  data-aos="zoom-in">
+      <img src="images/s4.jpg" alt="STP 4"  data-aos="zoom-in">
+      <img src="images/s5.jpg" alt="STP 5"  data-aos="zoom-in">
+      <img src="images/s6.jpg" alt="STP 6"  data-aos="zoom-in">
+      <img src="images/s7.jpg" alt="STP 7"  data-aos="zoom-in">
+      <img src="images/s8.jpg" alt="STP 8"  data-aos="zoom-in">
+      <img src="images/s9.jpg" alt="STP 9"  data-aos="zoom-in">
+      <img src="images/s10.jpg" alt="STP 10"  data-aos="zoom-in">
+      <img src="images/s11.jpg" alt="STP 11"  data-aos="zoom-in">
+      <img src="images/s12.jpg" alt="STP 12"  data-aos="zoom-in">
+      <img src="images/s13.jpg" alt="STP 13" data-aos="zoom-in">
+      <img src="images/s14.jpg" alt="STP 14"  data-aos="zoom-in">
+     
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer class="ews-footer">
+  <div class="ews-footer-container">
+
+    <!-- BRAND -->
+    <div class="ews-footer-col">
+      <div class="ews-footer-brand">
+        <span class="ews-footer-logo"  data-aos="zoom-in">
+          <i class="bi bi-droplet-fill"></i>
+        </span>
+        <h3  data-aos="zoom-in">ELITE WATER</h3>
+      </div>
+
+      <p class="ews-footer-desc"  data-aos="zoom-in">
+        Elite Water Solutions is a total water management engineering company
+        committed to providing the best and affordable high quality solutions.
+      </p>
+
+      <div class="ews-footer-socials">
+        <a href="#"  data-aos="zoom-in"><i class="bi bi-facebook"></i></a>
+        <a href="#"  data-aos="zoom-in"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"  data-aos="zoom-in"><i class="bi bi-linkedin"></i></a>
+        <a href="#"  data-aos="zoom-in"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="ews-footer-col">
+      <h4  data-aos="zoom-in">Contact Us</h4>
+
+      <ul class="ews-footer-list">
+        <li  data-aos="zoom-in">
+          <i class="bi bi-geo-alt"></i>
+          <span>
+            2/10 United India Colony,<br>
+            1st Cross street,<br>
+            Kodambakkam,<br>
+            Chennai 600 024
+          </span>
+        </li>
+
+        <li  data-aos="zoom-in">
+          <i class="bi bi-telephone"></i>
+          <span>+91 90940 05099</span>
+        </li>
+
+        <li  data-aos="zoom-in">
+          <i class="bi bi-envelope"></i>
+          <span>contact@elitewatersolutions.com</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="ews-footer-col">
+      <h4  data-aos="zoom-in">Services</h4>
+      <ul class="ews-footer-links">
+        <li  data-aos="zoom-in"><a href="#">Residential filtration</a></li>
+        <li  data-aos="zoom-in"><a href="#">Commercial filtration</a></li>
+        <li  data-aos="zoom-in"><a href="#">Industrial Solutions</a></li>
+        <li  data-aos="zoom-in"><a href="#">Water Testing</a></li>
+        <li  data-aos="zoom-in"><a href="#">Maintenance</a></li>
+      </ul>
+    </div>
+
+    <!-- COMPANY -->
+    <div class="ews-footer-col">
+      <h4  data-aos="zoom-in">Company</h4>
+      <ul class="ews-footer-links">
+        <li  data-aos="zoom-in"><a href="about.html">About Us</a></li>
+        <li  data-aos="zoom-in"><a href="services.html">Our Services</a></li>
+        <li  data-aos="zoom-in"><a href="faq.html">FAQ</a></li>
+        <li  data-aos="zoom-in"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="ews-footer-bottom">
+    <p>© 2025 Elite Water Solutions. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 80) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+
+</body>
+</html>
