@@ -31,7 +31,7 @@ font-family: 'Poppins', sans-serif;
 
 /* LOGO SHRINK ON SCROLL */
 .navbar.scrolled .navbar-brand img {
-  transform: scale(1.48);       /* still bigger after scroll */
+  transform: scale(1.50);       /* still bigger after scroll */
 }
 
 
@@ -933,7 +933,7 @@ html, body {
 
 /* LOGO */
 .brand-wrap img {
-  height: 45px;
+  height: 55px;
   width: auto;
   margin: 0 auto;             /* 🔥 force center */
   display: block;
@@ -942,11 +942,11 @@ html, body {
 /* TEXT */
 .brand-text {
   margin-top: 15px;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 700;
   color: red;
   letter-spacing: 1.2px;
   text-align: center;
-  transform: translateX(15px); /* 👉 right side move */
+  transform: translateX(22px); /* 👉 right side move */
 }
 
