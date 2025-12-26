@@ -4,7 +4,7 @@ font-family: 'Poppins', sans-serif;
 
 /* ================= NAVBAR ================= */
 .navbar {
-  padding: 22px 0;
+  padding: 12px 0;
   background: #ffffff;
   transition: all 0.35s ease;
   box-shadow: 0 4px 15px rgba(0,0,0,0.06);
@@ -15,13 +15,11 @@ font-family: 'Poppins', sans-serif;
   padding: 10px 0;
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
-
-/* LOGO IMAGE */
+/* 
 .navbar-brand {
   display: flex;
   align-items: center;
-  height: 52px;        /* FIXED navbar logo area height */
-}
+} */
 
 .navbar-brand img {
   height: 52px;    
@@ -33,7 +31,7 @@ font-family: 'Poppins', sans-serif;
 
 /* LOGO SHRINK ON SCROLL */
 .navbar.scrolled .navbar-brand img {
-  transform: scale(1.35);       /* still bigger after scroll */
+  transform: scale(1.48);       /* still bigger after scroll */
 }
 
 
@@ -916,3 +914,39 @@ html, body {
     overflow-x: hidden !important;
   }
 }
+/* NAVBAR BRAND FIX */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* BRAND WRAP */
+.brand-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* 🔥 hard center */
+  justify-content: center;
+  text-align: center;
+}
+
+/* LOGO */
+.brand-wrap img {
+  height: 45px;
+  width: auto;
+  margin: 0 auto;             /* 🔥 force center */
+  display: block;
+}
+
+/* TEXT */
+.brand-text {
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: red;
+  letter-spacing: 1.2px;
+  text-align: center;
+  transform: translateX(15px); /* 👉 right side move */
+}
+
